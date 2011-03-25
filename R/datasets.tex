@@ -1,0 +1,122 @@
+ 
+\newpage
+\section{Datasets}
+%Alleen bedoeld voor onszelf, ideeen over data et cetera die we kunnen gebruiken
+
+\begin{enumerate} 
+	\item Introduction to mixture models
+	\begin{enumerate}
+		\item what are mixture models? 
+		\item what is their relationship to HMMs?
+		\item notation
+	\end{enumerate}
+	\item Definifing hidden Markov models
+	\begin{enumerate}
+		\item what are HMMs?
+		\item what is hidden about HMMs?
+		\item what is Markov about HMMs?
+		\item Markov models
+		\item hidden Markov model parameters
+		\item important properties of hidden Markov models: 
+		stationarity, homogeneity, transitions, observation
+	\end{enumerate}
+	\item Likelihood computation
+	\item Estimating parameters with the EM algorithm
+	\begin{enumerate}
+		\item Formulating the estimation problem as a missing data 
+		problem
+		\item Details of the algorithm
+		\item Defining and estimating models in R
+	\end{enumerate}
+	\item Constraining parameters using direct optimization of the 
+	likelihood
+	\begin{enumerate}
+		\item direct optimization
+		\item using gradients
+		\item parameter starting values
+		\item testing hypotheses by constraining parameters
+	\end{enumerate}
+	\item Posterior state sequences
+	\begin{enumerate}
+		\item Assigning data to sequences of states
+		\item The Viterbi algorithm
+	\end{enumerate}
+	\item Inference
+	\begin{enumerate}
+		\item model selection
+		\item parameter standard errors
+	\end{enumerate}
+\end{enumerate}
+
+En dan hier onze eigen overwegingen, bovenstaand stuk is voor de
+editor, dit voor onszelf.
+
+
+Wat betreft de data sets is het misschien een idee om een aantal "key"
+datasets te gebruiken die we hier een daar laten
+
+Dat is zeker een goed idee; de speed-accuracy data die al bij depmix
+zitten zijn uitermate geschikt voor een aantal dingen:
+
+i) univariate gaussian modellen (alleen de RTs)
+
+ii) mixed data (gaussian + binary)
+
+iii) covariaten op de transitie kansen
+
+iv) locale afhankelijkheid: in een 2-state model voor die data is er nog sprake van locale afhankelijkheid in de langzame component
+
+v) ergodische modellen
+
+
+Daarnaast heb ik discrimination learning data, goed voor de volgende
+onderwerpen:
+
+i) niet-ergodische modellen, transient and absorbing states
+
+ii) binaire data
+
+iii) mixtures van HMMs
+
+Ik heb van Brenda Jansen nog een dataset met een microgenetic study
+naar ontwikkeling op de balans taak: 10 herhaalde metingen over ca 10
+weken met allerlei balans items en nog een of andere manipulatie (moet
+ik nog bekijken, maar klinkt op papier als een hele mooie data set).
+
+terugkomen.  Ik heb zelf wel wat leerdata die we kunnen gebruiken, met
+name multiple cue probability learning data (weather prediction task,
+stockmarket prediction task).  Misschien is het ook leuk iets met
+"topic models" te doen.
+
+Wat voor soort dingen kun je daar zoal mee illustreren?
+Wpt data: univariaat, binary? Kun jij dit lijstje aanvullen?
+
+Allebei zijn GLM's: de WPT voor logistische regressie en de SMPT voor
+Gaussian/lineaire regressie.
+
+Topic models zijn, voor zover ik weet, in esstentie multinomial
+modellen.
+
+Had Mark de Rooij trouwens niet iets interessants met voting data?
+
+We kunnen ook in Wicken's boek kijken voor ideen.  Maar we moeten
+misschien uitkijken niet alleen leerdata te gebruiken.  Klinische data
+zou ook goed zijn.  Volgens mij heeft Peter Molenaar wel iets op dat
+gebied, maar denk je dat hij het zou willen delen?
+
+Ja, dat lijkt me geen probleem, ik weet niet zo goed wat hij heeft ...
+Ik dacht wel ook aan de data van Gottmann over huwlijksdynamica, Han
+heeft die data, maar daar zouden we zeker ook toestemming voor moeten
+vragen.  Daarnaast heb ik altijd nog de Borkenau data waar ik wel eens
+naar zou willen kijken.  Aan de andere kant: voor een boek zou ik
+ernaar willen streven toch vooral gebruik te maken van reeds
+gepubliceerd werk, anders moeten we nog echt nieuw werk gaan doen, dat
+kan niet de bedoeling zijn (-; [Maar een beetje nieuw is wel leuk,
+toch?]
+
+De ESRC heeft ook publieke data waar we naar kunnen kijken.  Dan
+moeten we wel toestemming vragen om het in een R package te zetten.
+
+Dat klinkt ook interessant.  Wellicht voor een financiele of medische
+data set?
+ 
