@@ -1,0 +1,13 @@
+citHeader("To cite hmmr in publications use:")
+
+citEntry(entry = "book",
+  title        = "Hidden Markov Models with R",
+  author       = personList(as.person("Ingmar Visser"),
+                   as.person("Maarten Speekenbrink")),
+  year         = "2013",
+
+  textVersion  =
+  paste("Ingmar Visser, Maarten Speekenbrink (2013).",
+        "Hidden Markov Models with R.")
+)
+

@@ -1,11 +1,11 @@
 Package: hmmr
 Version: 0.1-0
-Date: 2011-03-22
-Title: Data and examples package accompanying the book HMMs with R
+Date: 2011-06-28
+Title: Data and examples package accompanying the book 'HMMs with R'
 Author: Ingmar Visser <i.visser@uva.nl>, Maarten Speekenbrink <m.speekenbrink@ucl.ac.uk>
 Maintainer: Ingmar Visser <i.visser@uva.nl>
-Depends: R (>= 2.12.2), depmixS4
+Depends: R (>= 2.13.0), depmixS4
 Suggests: 
-Description: Data and examples package accompanying the book HMMs with R
+Description: Data and examples package accompanying the book 'HMMs with R'
 License: GPL (>=2)
 URL: http://depmix.r-forge.r-project.org/
