@@ -8,18 +8,9 @@
 
 \description{
 
-	This data set is a bivariate series of response times and accuracy
-	scores of a single participant switching between slow/accurate
-	responding and fast guessing on a lexical decision task.  The slow and
-	accurate responding, and the fast guessing can be modelled using two
-	states, with a switching regime between them.  The dataset further
-	contains a third variable called Pacc, representing the relative
-	pay-off for accurate responding, which is on a scale of zero to one.
-	The value of Pacc was varied during the experiment to induce the
-	switching.  This data set is a from participant A in experiment 
-	1a from Dutilh et al (2011). The data here is the first series of
-	168 trials. The \code{speed} data set in the \code{depmixS4} package 
-	has two more series of 134 and 137 trials respectively. 
+	This data set contains responses of 11 Parkinsons' patients and 13 age-matched
+	controls on the Weather Prediction Task. Both groups were tested twice. The PD
+	patients were either on or off dopaminergic medication.
 	
 }
 
@@ -52,6 +43,41 @@ Corresponding author: m.speekenbrink@ucl.ac.uk
 
 \examples{
 data(WPT)
+
+data(WPT)
+# set up predictors for the different strategies
+WPT$sngl <- 0 # singleton strategy
+WPT$sngl[WPT$c1 == 1 & rowSums(WPT[,c("c1","c2","c3","c4")]) == 1] <- -1
+WPT$sngl[WPT$c2 == 1 & rowSums(WPT[,c("c1","c2","c3","c4")]) == 1] <- -1
+WPT$sngl[WPT$c3 == 1 & rowSums(WPT[,c("c1","c2","c3","c4")]) == 1] <- 1
+WPT$sngl[WPT$c4 == 1 & rowSums(WPT[,c("c1","c2","c3","c4")]) == 1] <- 1
+WPT$sc1 <- 1 - 2*WPT$c1
+WPT$sc2 <- 1 - 2*WPT$c2
+WPT$sc3 <- -1 + 2*WPT$c3
+WPT$sc4 <- -1 + 2*WPT$c4
+WPT$mc <- sign(-WPT$c1 - WPT$c2 + WPT$c3 + WPT$c4)
+
+rModels <- list(
+	list(GLMresponse(formula=r~-1,data=WPT,family=binomial())),
+	list(GLMresponse(formula=r~sngl-1,data=WPT,family=binomial())),
+	list(GLMresponse(formula=r~sc1-1,data=WPT,family=binomial())),
+	list(GLMresponse(formula=r~sc2-1,data=WPT,family=binomial())),
+	list(GLMresponse(formula=r~sc3-1,data=WPT,family=binomial())),
+	list(GLMresponse(formula=r~sc4-1,data=WPT,family=binomial())),
+	list(GLMresponse(formula=r~mc-1,data=WPT,family=binomial()))
+)
+
+transition <- list()
+for(i in 1:7) {
+  transition[[i]] <- transInit(~1,nstates=7,family=multinomial(link="identity"))
+}
+
+inMod <- transInit(~1,ns=7,data=data.frame(rep(1,48)),family=multinomial("identity"))
+
+mod <- makeDepmix(response=rModels,transition=transition,prior=inMod,ntimes=rep(200,48),stationary=TRUE)
+
+\dontrun{fmod <- fit(mod)}
+
 ## maybe str(WPT) ; plot(WPT) ...
 }
 
