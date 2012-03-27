@@ -1,9 +1,11 @@
-
 \name{discrimination}
+
 \docType{data}
+
 \alias{discrimination}
 
 \title{Discrimination Learning Data}
+
 \description{
 	This data set is from a simple discrimation learning experiment.  It
 	consists of 192 binary series of responses of different lengths. This
@@ -11,8 +13,18 @@
 	it is analyzed much more extensively using latent Markov models and depmix in
 	\cite{Schmittmann et al. (2006)} and \cite{Visser et al. (2006).}.
 }
-\usage{data(discrimination)}
-\format{An object of class \code{markovdata}.}
+
+\usage{
+data(discrimination)
+}
+
+\format{
+A data frame with a total of 3139 observations on the following variable:
+  \describe{
+	\item{\code{acc}}{a factor of accuracy scores (incorrect/correct)}
+  }
+}
+
 \source{
 	Maartje E. J. Raijmakers, Conor V. Dolan and Peter C. M. Molenaar 
 	(2001).  Finite mixture distribution models of simple discrimination
