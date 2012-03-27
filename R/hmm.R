@@ -39,7 +39,7 @@ lca <- function(data, nclasses, fit=TRUE, family=NULL, ...) {
 		
 	mod <- mix(response=form,data=data,nstates=nclasses,family=family, ...)
 	attr(mod,"type") <- "lca"
-	res <- fit(mod)
+	res <- fit(mod, emcontrol=em.control(maxit=500))
 	return(res)
 }
 
@@ -160,7 +160,8 @@ hmm <- function(data, nstates, fit=TRUE, ntimes=NULL, family=NULL) {
 		
 	mod <- depmix(response=form,data=data,nstates=nstates,ntimes=ntimes,family=family)
 	attr(mod,"type") <- "hmm"
-	res <- fit(mod)
+	if(fit) res <- fit(mod, emcontrol=em.control(maxit=500))
+	else res <- mod
 	return(res)
 }
 
