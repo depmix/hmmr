@@ -1,4 +1,5 @@
 importFrom(stats, predict, simulate)
+importFrom(stats4, summary)
 
 export(hmm,
 	lca)
