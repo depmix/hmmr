@@ -62,7 +62,7 @@ setMethod("show","mix",
 )
 
 setMethod("summary","mix.fitted",
-	function(object,which="all",compact=FALSE) {
+	function(object,which="all",compact=TRUE) {
 		ns <- nstates(object)
 		ans=switch(which,
 			"all" = 1,
@@ -209,7 +209,7 @@ setMethod("show","depmix",
 )
 
 setMethod("summary","depmix.fitted",
-	function(object,which="all", compact=FALSE) {
+	function(object,which="all", compact=TRUE) {
 		ns <- object@nstates
 		ans=switch(which,
 			"all" = 1,
