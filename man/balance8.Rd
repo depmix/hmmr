@@ -9,7 +9,7 @@
 \description{
 
 	Data are from 8 repeated measurements of 25 balance scale items with 1004 
-	participants ranging from 6-17 years of age. The data are aggragated over
+	participants ranging from 6-17 years of age. The data are aggregated over
 	5 item types: weight (w), distance (d), conflict weight (cw), conflict 
 	distance (cd), and conflict balance (cb). 
 	

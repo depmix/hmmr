@@ -1,8 +1,8 @@
-\name{speedacc}
+\name{speed1}
 
 \docType{data}
 
-\alias{speedacc}
+\alias{speed1}
 
 \title{Speed Accuracy Switching Data}
 
@@ -23,7 +23,7 @@
 	
 }
 
-\usage{data(speedacc)}
+\usage{data(speed1)}
 
 \format{
   A data frame with 168 observations on the following 3 variables.
@@ -39,14 +39,12 @@
 	Gilles Dutilh, Eric-Jan Wagenmakers, Ingmar Visser, & Han L. J. van der Maas (2011).
 	A phase transition model for the speed-accuracy trade-off in response time experiments.
 	\emph{Cognitive Science}, 35:211-250.
-	
-	Corresponding author: g.dutilh@uva.nl 
-	
+		
 }
 
 \examples{
-data(speedacc)
-## maybe str(speedacc) ; plot(speedacc) ...
+data(speed1)
+## maybe str(speed1) ; plot(speed1) ...
 }
 
 \keyword{datasets}
