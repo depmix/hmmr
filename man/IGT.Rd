@@ -25,18 +25,18 @@
   \item{\code{win}}{a numeric variable with the amount won on each trial}
   \item{\code{loss}}{a numeric variable with the amount lost on each trial}
   \item{\code{gdeck}}{a factor indicating whether the chosen deck was good/advantageous (TRUE) or not (FALSE)}
-  \item{\code{gdeck}}{a factor indicating whether the chosen deck has a relatively variable outcome (TRUE) or not (FALSE)}
+  \item{\code{vdeck}}{a factor indicating whether the chosen deck has a relatively variable outcome (TRUE) or not (FALSE)}
   }
 }
 
 \source{
 
-Konstantinidis, E. and Shanks, D.R. (submitted). Don’t Bet on it! Wagering as a Measure of Awareness in Decision Making under Uncertainty.
+Konstantinidis, E. and Shanks, D.R. (submitted). Don't Bet on it! Wagering as a Measure of Awareness in Decision Making under Uncertainty.
 
-	
 }
 
 \examples{
 data(IGT)
+}
 
 \keyword{datasets}
