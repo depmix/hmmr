@@ -5,7 +5,7 @@ citEntry(entry = "book",
   author       = personList(as.person("Ingmar Visser"),
                    as.person("Maarten Speekenbrink")),
   year         = "2013",
-
+  publisher    = "Springer",
   textVersion  =
   paste("Ingmar Visser, Maarten Speekenbrink (2013).",
         "Hidden Markov Models with R.")

@@ -28,8 +28,8 @@
 \format{
   A data frame with 168 observations on the following 3 variables.
   \describe{
-	\item{\code{rt}}{a numeric vector of response times (log ms)}
-	\item{\code{corr}}{a numeric vector of accuracy scores (0/1)}
+	\item{\code{RT}}{a numeric vector of response times (log ms)}
+	\item{\code{ACC}}{a numeric vector of accuracy scores (0/1)}
 	\item{\code{Pacc}}{a numeric vector of the pay-off for accuracy}
   }
 }
@@ -44,7 +44,6 @@
 
 \examples{
 data(speed1)
-## maybe str(speed1) ; plot(speed1) ...
 }
 
 \keyword{datasets}

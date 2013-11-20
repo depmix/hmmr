@@ -26,31 +26,23 @@
 \usage{data(infantLearning)}
 
 \format{
-	A data frame with 532 (19 infants times 28 trials) observations on the
-	following 3 variables.  
-	
-	\describe{ 
-	
-		item{\code{id}}{infant id}
-	
-		\item{\code{trial}}{trial number}
+  A data frame with 532 observations on the following 8 variables.
+  \describe{
+    \item{\code{id}}{infant id}
+    \item{\code{trial}}{trial number}
+    \item{\code{center}}{the number of looks at the center of the screen.}
+    \item{\code{away}}{the number of looks away from the screen/stimulus.}
+    \item{\code{cor}}{the number of correct anticipatory looks.}
+    \item{\code{inc}}{the number of incorrect anticipatory looks.}
+    \item{\code{looks}}{the total number of looks during the trial (sum of center,
+		away, cor, and inc).}
 		
-		\item{center}{the number of looks at the center of the screen.}
+	\item{\code{last}}{a factor with levels \code{cor} \code{inc}
+	\code{no}; whether the last look of infants was a '\code{cor}'rect
+	anticipation, an '\code{inc}'orrect antipation or '\code{no}'
+	anticipation at all.}
 		
-		\item{away}{the number of looks away from the screen/stimulus.}
-				
-		\item{acc}{the number of correct anticipatory looks.}
-
-		\item{err}{the number of incorrect anticipatory looks.}
-
-		\item{looks}{the total number of looks during the trial (sum of center,
-		away, acc, and err).}
-		
-		\item{\code{last}}{Whether the last look of infants was a
-		'\code{cor}'rect anticipation, an '\code{inc}'orrect antipation or
-		'\code{no}' anticipation at all.}
-
-	}
+  }
 }
 
 \source{
