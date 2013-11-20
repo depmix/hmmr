@@ -1,4 +1,4 @@
-lca <- function(data, nclasses, fit=TRUE, family=NULL, ...) {
+lca <- function(data, nclasses, fit=TRUE, family=NULL, verbose=TRUE, ...) {
 	
 	# univariate numeric data by default treated as gaussian
  	if(is.vector(data)) {
@@ -39,12 +39,12 @@ lca <- function(data, nclasses, fit=TRUE, family=NULL, ...) {
 		
 	mod <- mix(response=form,data=data,nstates=nclasses,family=family, ...)
 	attr(mod,"type") <- "lca"
-	if(fit) res <- fit(mod, emcontrol=em.control(maxit=500))
+	if(fit) res <- fit(mod, emcontrol=em.control(maxit=500), verbose=verbose)
 	else res <- mod
 	return(res)
 }
 
-hmm <- function(data, nstates, fit=TRUE, ntimes=NULL, family=NULL, ...) {
+hmm <- function(data, nstates, fit=TRUE, ntimes=NULL, family=NULL, verbose=TRUE, ...) {
 	
 	# univariate numeric data by default treated as gaussian
  	if(is.vector(data)) {
@@ -88,7 +88,7 @@ hmm <- function(data, nstates, fit=TRUE, ntimes=NULL, family=NULL, ...) {
 		
 	mod <- depmix(response=form,data=data,nstates=nstates,ntimes=ntimes,family=family)
 	attr(mod,"type") <- "hmm"
-	if(fit) res <- fit(mod, emcontrol=em.control(maxit=500))
+	if(fit) res <- fit(mod, emcontrol=em.control(maxit=500), verbose=verbose)
 	else res <- mod
 	return(res)
 }

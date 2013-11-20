@@ -21,8 +21,8 @@ provided in \pkg{depmixS4} by automagically setting some argument values.
 
 \usage{
 
-hmm(data, nstates, fit = TRUE, ntimes = NULL, family = NULL, ...)
-lca(data, nclasses, fit = TRUE, family = NULL, ...)
+hmm(data, nstates, fit = TRUE, ntimes = NULL, family = NULL, verbose=TRUE, ...)
+lca(data, nclasses, fit = TRUE, family = NULL, verbose=TRUE, ...)
 
 }
 
@@ -48,6 +48,9 @@ lca(data, nclasses, fit = TRUE, family = NULL, ...)
 	\item{family}{(a list of) name(s) of the distribution(s) to be used in
 	fitting; if provided, it should have length of the number of the number
 	of columns in \code{data}, see Details.}
+	
+	\item{verbose}{\code{logical}; when \code{TRUE} iteration information
+	of the fitting process is printed.}
 	
 	\item{\dots}{not currently used.}
 
