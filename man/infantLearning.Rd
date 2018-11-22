@@ -47,7 +47,9 @@
 
 \source{
 	
-	Mandell & Raijmakers (2012), et cetera. 
+	Mandell, D. J., & Raijmakers, M. E. (2012). Using a single feature 
+	to discriminate and form categories: The interaction between color, 
+	form and exemplar number. \emph{Infant Behavior and Development}, 35(3), 348-359.	
 	
 }
 

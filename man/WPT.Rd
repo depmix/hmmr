@@ -17,7 +17,7 @@
 \usage{data(WPT)}
 
 \format{
-  A data frame with 9600 observations on the following variables.
+  A data.frame with 9600 observations on the following variables.
   \describe{
   \item{\code{id}}{a factor with participant IDs}
   \item{\code{group}}{a factor with group IDs (Parksinson's patient or control)}
@@ -35,7 +35,9 @@
 
 \source{
 
-Speekenbrink, M., Lagnado, D. A., Wilkinson, L., Jahanshahi, M., & Shanks, D. R. (2010). Models of probabilistic category learning in Parkinson's disease: Strategy use and the effects of L-dopa. \emph{Journal of Mathematical Psychology}, \emph{54}, 123-136.
+Speekenbrink, M., Lagnado, D. A., Wilkinson, L., Jahanshahi, M., & Shanks, D. R. (2010). 
+Models of probabilistic category learning in Parkinson's disease: Strategy use and the 
+effects of L-dopa. \emph{Journal of Mathematical Psychology}, \emph{54}, 123-136.
 	
 Corresponding author: m.speekenbrink@ucl.ac.uk
 	
@@ -44,7 +46,6 @@ Corresponding author: m.speekenbrink@ucl.ac.uk
 \examples{
 data(WPT)
 
-data(WPT)
 # set up predictors for the different strategies
 WPT$sngl <- 0 # singleton strategy
 WPT$sngl[WPT$c1 == 1 & rowSums(WPT[,c("c1","c2","c3","c4")]) == 1] <- -1
@@ -74,11 +75,11 @@ for(i in 1:7) {
 
 inMod <- transInit(~1,ns=7,data=data.frame(rep(1,48)),family=multinomial("identity"))
 
-mod <- makeDepmix(response=rModels,transition=transition,prior=inMod,ntimes=rep(200,48),stationary=TRUE)
+mod <- makeDepmix(response=rModels,transition=transition, 
+	prior=inMod,ntimes=rep(200,48),stationary=TRUE)
 
 \dontrun{fmod <- fit(mod)}
 
-## maybe str(WPT) ; plot(WPT) ...
 }
 
 \keyword{datasets}

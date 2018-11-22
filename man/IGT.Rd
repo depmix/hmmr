@@ -7,9 +7,8 @@
 \title{Iowa Gambling Task data}
 
 \description{
-
-	This data set contains responses of 30 participants on the 
-  Iowa Gambling Task.
+	
+	This data set contains responses of 30 participants on the Iowa Gambling Task.
 	
 }
 

@@ -1,5 +1,9 @@
-importFrom(stats, predict, simulate)
+
+importFrom(stats, "predict", "simulate", "as.formula", "gaussian")
+
 importFrom(stats4, summary)
+
+import(depmixS4)
 
 export(hmm,
 	lca)

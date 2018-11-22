@@ -1,4 +1,4 @@
-lca <- function(data, nclasses, fit=TRUE, family=NULL, verbose=TRUE, ...) {
+lca <- function(data, nclasses, fit=TRUE, family=NULL, verbose=FALSE, ...) {
 	
 	# univariate numeric data by default treated as gaussian
  	if(is.vector(data)) {
@@ -44,7 +44,7 @@ lca <- function(data, nclasses, fit=TRUE, family=NULL, verbose=TRUE, ...) {
 	return(res)
 }
 
-hmm <- function(data, nstates, fit=TRUE, ntimes=NULL, family=NULL, verbose=TRUE, ...) {
+hmm <- function(data, nstates, fit=TRUE, ntimes=NULL, family=NULL, verbose=FALSE, ...) {
 	
 	# univariate numeric data by default treated as gaussian
  	if(is.vector(data)) {

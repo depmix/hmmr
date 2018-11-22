@@ -54,7 +54,6 @@
 
 \examples{
 data(balance8)
-## maybe str(balance8) ; plot(balance8) ...
 }
 
 \keyword{datasets}

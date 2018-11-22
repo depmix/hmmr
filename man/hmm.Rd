@@ -21,8 +21,8 @@ provided in \pkg{depmixS4} by automagically setting some argument values.
 
 \usage{
 
-hmm(data, nstates, fit = TRUE, ntimes = NULL, family = NULL, verbose=TRUE, ...)
-lca(data, nclasses, fit = TRUE, family = NULL, verbose=TRUE, ...)
+hmm(data, nstates, fit = TRUE, ntimes = NULL, family = NULL, verbose=FALSE, ...)
+lca(data, nclasses, fit = TRUE, family = NULL, verbose=FALSE, ...)
 
 }
 

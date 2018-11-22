@@ -7,12 +7,15 @@
 \title{Conservation of liquid}
 
 \description{
+	
 	This data set is from a conservation of liquid task adminstered to 101
 	children aged 6-10, measured at 5 occasions.  The data provided here
 	are those analyzed in \cite{Schmittmann et al.  2005} in Illustration
 	1, which is part of a larger data set described \cite{Van der Maas,
 	1993}.
+	
 }
+
 \usage{
 data(discrimination)
 }
