@@ -45,5 +45,9 @@ speed_boot_par <- boot(fspmix2,speed.fun,R=1000,sim="parametric",
 }
 \examples{
 data(speed_boot_par)
+# confidence intervals
+confint <- apply(speed_boot_par$t,2,quantile,probs=c(.025,.975))
+colnames(confint) <- c("p1","p2","m1","sd1","m2","sd2")
+confint
 }
 \keyword{datasets}
