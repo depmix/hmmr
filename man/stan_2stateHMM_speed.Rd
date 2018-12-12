@@ -107,12 +107,6 @@ stan_2stateHMM_speed <- stan(model_name = "two-state-HMM",
                 warmup = 2000)
 }
 }
-\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
 \examples{
 data(stan_2stateHMM_speed)
 ## maybe str(stan_2stateHMM_speed) ; plot(stan_2stateHMM_speed) ...

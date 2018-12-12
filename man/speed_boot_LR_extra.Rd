@@ -65,12 +65,6 @@
           ((speed_boot_LR$R+speed_boot_LR_extra$R)+1)
     }
 }
-\source{
-  %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-  %%  ~~ possibly secondary sources and usages ~~
-}
 \examples{
   data(speed_boot_LR)
 }

@@ -37,12 +37,6 @@ speed_boot_par <- boot(fspmix2,speed.fun,R=1000,sim="parametric",
                    ran.gen = speed.rg)
 }
 }
-\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
 \examples{
 data(speed_boot_par)
 # confidence intervals
