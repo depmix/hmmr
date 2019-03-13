@@ -57,7 +57,7 @@ A data.frame consisting of the following variable:
 	
 }
 
-\example{
+\examples{
 
 # the original data was in wide format; for analysis with hidden Markov models, data in long format is
 # more convenient; the following code was used to reshape the data from wide to long format (and make 
