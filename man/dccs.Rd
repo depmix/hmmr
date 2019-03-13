@@ -3,6 +3,7 @@
 \docType{data}
 
 \alias{dccs}
+\alias{dccslong}
 
 \title{Dimensional Change Card Sort Task Data}
 
@@ -15,6 +16,7 @@
 
 \usage{
 data(dccs)
+data(dccslong)
 }
 
 \format{
@@ -53,6 +55,19 @@ A data.frame consisting of the following variable:
 	of development on the Dimensional Change Card Sorting task. 
 	\emph{Developmental Science, vol 14(5)}, 960-971.
 	
+}
+
+\example{
+
+# the original data was in wide format; for analysis with hidden Markov models, data in long format is
+# more convenient; the following code was used to reshape the data from wide to long format (and make 
+# a selection of the columns)
+
+data(dccs)
+dccslong <- reshape(dccs[,c("pp","ageM","sex","t1Post","t2Post","t3Post","t4Post","t5Post","t6Post")], direction="long", varying=list(4:9))
+dccslong <- dccslong[order(dccslong$pp),-6]
+names(dccslong) <- c("pp","ageM","sex","trial","acc")
+
 }
 
 \keyword{datasets}
