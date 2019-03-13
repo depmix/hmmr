@@ -1,9 +1,10 @@
 
-importFrom(stats, "predict", "simulate", "as.formula", "gaussian")
+importFrom(stats, "predict", "simulate", "as.formula", "gaussian","dbinom", "dnorm", "rbeta", "rgamma", "rnorm")
 
 importFrom(stats4, summary)
 
 import(depmixS4)
 
 export(hmm,
-	lca)
+	lca,
+	FFBS_BinomialNormal)
