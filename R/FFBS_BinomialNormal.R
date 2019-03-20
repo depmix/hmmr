@@ -92,7 +92,7 @@ FFBS_BinomialNormal <- function(bin,norm,nstates,hyperPars=list(),ntimes,niter=1
       #if(is.na(ms)) ms <- 0 # to avoid NA later; note that if state_counts[s] == 0, the computed values of ck, Ck, bk, and Bk should be the prior values 
       
       # posterior scale of inv sigma
-      Ck <- ifelse(state_counts[s] > 0, norm_invsigma_scale + .5*(sum((norm[sampled_states==s] - ms)^2) + (state_counts[s]*norm_mu_sca)/(state_counts[s] + norm_mu_sca)*(ms-norm_mu_mean)^2), norm_invsigma_scale)
+      Ck <- ifelse(state_counts[s] > 0, norm_invsigma_scale + .5*(sum((norm[sampled_states==s] - ms)^2) + ((state_counts[s]*norm_mu_sca)/(2*(state_counts[s] + norm_mu_sca)))*(ms-norm_mu_mean)^2), norm_invsigma_scale)
       sigma[s] <- 1/rgamma(1,ck,Ck)
       while(is.infinite(sigma[s])) sigma[s] <- 1/rgamma(1,ck,Ck)
       # posterior mean of mu 
