@@ -1,11 +1,11 @@
 Package: hmmr
 Version: 0.3-0
-Date: 2018-11-22
+Date: 2019-03-20
 Title: 'Hidden Markov Models with R' Datasets
 Author: Ingmar Visser <i.visser@uva.nl>, Maarten Speekenbrink <m.speekenbrink@ucl.ac.uk>
 Maintainer: Ingmar Visser <i.visser@uva.nl>
 Depends: R (>= 3.5.0), depmixS4, stats4
 Suggests: 
-Description: Datasets and code examples that accompary the book 'HMMs with R'.
+Description: Datasets and code examples that accompary the book 'Mixture and Hidden Markov Models with R'.
 License: GPL (>=2)
 URL: https://r-forge.r-project.org/projects/hmmr/
