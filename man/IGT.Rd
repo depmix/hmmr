@@ -20,7 +20,7 @@
   \item{\code{id}}{a factor with participant IDs}
   \item{\code{trial}}{a numeric vector with trial numbers}
   \item{\code{deck}}{a factor with the deck chosen on each trial (A-D)}
-  \item{\code{wager}}{a numeric variable indicating whether participants wagered low (0) or high (1)}
+  \item{\code{wager}}{a factor indicating whether participants wagered low or high}
   \item{\code{win}}{a numeric variable with the amount won on each trial}
   \item{\code{loss}}{a numeric variable with the amount lost on each trial}
   \item{\code{gdeck}}{a factor indicating whether the chosen deck was good/advantageous (TRUE) or not (FALSE)}
