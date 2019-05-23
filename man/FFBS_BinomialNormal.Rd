@@ -8,9 +8,7 @@
 }
 
 \description{
-  
-  
-  
+    Posterior (MCMC) samples for a hidden Markov model with a Binomial and Normal response using the forward-filtering backward-sampling algorithm.
 }
 
 \usage{
