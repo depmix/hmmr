@@ -76,7 +76,7 @@
   set.seed(1)
   hyperPars <- list(norm_invsigma_scale=.01,norm_invsigma_shape=.01,norm_mu_sca=.1)
   mcmc_samples <- FFBS_BinomialNormal(speed$corr,speed$rt,nstates=2,
-        ntimes=c(168,134,137),niter=1000,hyperPars = hyperPars)
+        ntimes=c(168,134,137),niter=500,hyperPars = hyperPars)
         
   plot(mcmc_samples$mu[,1])
   hist(mcmc_samples$mu[,1])
