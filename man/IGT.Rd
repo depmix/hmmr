@@ -30,7 +30,7 @@
 
 \source{
 
-Konstantinidis, E. and Shanks, D.R. (submitted). Don't Bet on it! Wagering as a Measure of Awareness in Decision Making under Uncertainty.
+Konstantinidis, E. and Shanks, D.R. (2014). Don't Bet on it! Wagering as a Measure of Awareness in Decision Making under Uncertainty. \emph{Journal of Experimental Psychology: General}, 143(6), 2111-2134.
 
 }
 
