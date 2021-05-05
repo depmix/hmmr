@@ -12,7 +12,7 @@
   Results of a simulation study on the effect of missing data on estimates of parameters of a hidden Markov model. In the simulation, 1000 datasets were simulated, each consisting of 100 time series of length 50. The model generating the data was a hidden Markov model with 3 states. Missing values were generated for 5\% of cases in state 1, 25\% of cases in state 2, and 50\% of cases in state 3 (i.e. data can be considered missing not at random, as missingness is state-dependent).
 }
 
-\usage{data("NMAR_simulation_results")}
+\usage{data("MNAR_simulation_results")}
 \format{
   A \code{data.frame} with the following variables:
   \describe{
