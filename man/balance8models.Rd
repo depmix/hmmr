@@ -23,7 +23,7 @@
 The dataset is generated with the following code: 
 
 data(balance8)
-
+    \preformatted{
 multstart <- function(model, nr=10, initIters=10, verbose=TRUE) {
   llbest <- as.numeric(logLik(model))
   bestmodel <- model
@@ -87,7 +87,7 @@ hm8id <- depmix(list(cbind(wc,wi)~1,cbind(dc,di)~1,cbind(cwc,cwi)~1,cbind(cdc,cd
 fhm8id <- multstart(hm8id)
 
 balance8models <- list(fhm3id,fhm4id,fhm5id,fhm6id,fhm7id,fhm8id)
-
+}
 }
 
 
