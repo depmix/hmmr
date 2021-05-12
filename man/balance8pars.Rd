@@ -136,7 +136,7 @@ for(i in 1:length(balance8pars)) {
   mod@conMat <- attr(balance8pars[[i]],"conMat")
   mod@lin.upper <- attr(balance8pars[[i]],"lin.upper")
   mod@lin.lower <- attr(balance8pars[[i]],"lin.lower")
-  mod@posterior <- posterior(mod, type="viterbi")
+  mod@posterior <- viterbi(mod)
   # add to list of models
   balance8models[[i]] <- mod
 }
