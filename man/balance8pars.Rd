@@ -12,7 +12,7 @@
 	
 }
 
-\usage{data(balance8models)}
+\usage{data(balance8pars)}
 \format{
   A (named) list with parameter estumates for models with 3-8 states. Each 
   element contains additional attributes such as "message" reflecting the 
