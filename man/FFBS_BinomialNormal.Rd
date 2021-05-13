@@ -71,7 +71,8 @@
 
 
 \examples{
-  
+
+\dontrun{
   data(speed)
   set.seed(1)
   hyperPars <- list(norm_invsigma_scale=.01,norm_invsigma_shape=.01,norm_mu_sca=.1)
@@ -80,7 +81,7 @@
         
   plot(mcmc_samples$mu[,1])
   hist(mcmc_samples$mu[,1])
-
+}
 
 }
 
