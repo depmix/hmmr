@@ -6,6 +6,11 @@ Author: Ingmar Visser <i.visser@uva.nl>, Maarten Speekenbrink <m.speekenbrink@uc
 Maintainer: Ingmar Visser <i.visser@uva.nl>
 Depends: R (>= 4.0.0), depmixS4, stats4
 Suggests: 
-Description: Datasets and code examples that accompany the book 'Mixture and Hidden Markov Models with R'.
+Description: Datasets and code examples that accompany the Visser & Speekenbrink (in press) 'Mixture and Hidden Markov Models with R'.
 License: GPL (>=2)
 URL: https://r-forge.r-project.org/projects/hmmr/
+
+
+Please write references in the description of the DESCRIPTION file in 
+the form
+authors (year) <doi:...>
