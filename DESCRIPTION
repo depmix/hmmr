@@ -1,16 +1,11 @@
 Package: hmmr
 Version: 1.0-0
-Date: 2021-05-12
-Title: 'Hidden Markov Models with R' Datasets
-Author: Ingmar Visser <i.visser@uva.nl>, Maarten Speekenbrink <m.speekenbrink@ucl.ac.uk>
-Maintainer: Ingmar Visser <i.visser@uva.nl>
+Date: 2021-05-26
+Title: "Mixture and Hidden Markov Models with R" Datasets and Example Code
+Authors@R: c(person("Ingmar", "Visser",role=c("aut","cre"), email="i.visser@uva.nl"),
+	 		 person("Maarten", "Speekenbrink", role="aut", email="m.speekenbrink@ucl.ac.uk"))
 Depends: R (>= 4.0.0), depmixS4, stats4
 Suggests: 
-Description: Datasets and code examples that accompany the Visser & Speekenbrink (in press) 'Mixture and Hidden Markov Models with R'.
+Description: Datasets and code examples that accompany our book Visser & Speekenbrink (2021), "Mixture and Hidden Markov Models with R", <https://depmix.github.io/hmmr/>.
 License: GPL (>=2)
-URL: https://r-forge.r-project.org/projects/hmmr/
-
-
-Please write references in the description of the DESCRIPTION file in 
-the form Ingmar Visser authored this file
-authors (year) <doi:...>
+URL: <https://depmix.github.io/hmmr/>

@@ -78,7 +78,7 @@ inMod <- transInit(~1,ns=7,data=data.frame(rep(1,48)),family=multinomial("identi
 mod <- makeDepmix(response=rModels,transition=transition, 
 	prior=inMod,ntimes=rep(200,48),stationary=TRUE)
 
-\dontrun{fmod <- fit(mod)}
+\donttest{fmod <- fit(mod)}
 
 }
 
