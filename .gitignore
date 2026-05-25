@@ -1,0 +1,19 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# RStudio files
+.Rproj.user/
+
+# HTML builds of md
+*.html
+
+#docx outputs
+*.docx
+
+# DS Store
+.DS_Store
+*/.DS_Store
