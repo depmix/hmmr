@@ -28,7 +28,7 @@ A data frame with a total of 3139 observations on the following variable:
 \source{
 	Maartje E. J. Raijmakers, Conor V. Dolan and Peter C. M. Molenaar 
 	(2001).  Finite mixture distribution models of simple discrimination
-	learning. \emph{Memory \& Cognition}, vol 29(5).
+	learning. \emph{Memory & Cognition}, vol 29(5).
 
 	Ingmar Visser, Verena D. Schmittmann, and Maartje E. J. Raijmakers
 	(2007).  Markov process models for discrimination learning.  In: Kees

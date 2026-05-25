@@ -4,6 +4,7 @@
 
 # Session Data files
 .RData
+.Rbuildignore
 
 # RStudio files
 .Rproj.user/
@@ -20,3 +21,6 @@
 
 #checking script
 hmmrCheckScript.sh
+
+#claude
+CLAUDE.md

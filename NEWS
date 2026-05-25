@@ -1,4 +1,9 @@
 
+Changes in hmmr version 1.0-0
+
+  o Updated package to accompany Visser & Speekenbrink (2021),
+    "Mixture and Hidden Markov Models with R", Springer.
+
 Changes in hmmr version 0.3-0
 
   o Added many datasets to accompany the book. 

@@ -3,6 +3,8 @@ importFrom(stats, "predict", "simulate", "as.formula", "gaussian","dbinom", "dno
 
 importFrom(stats4, summary)
 
+importFrom(boot, boot)
+
 import(depmixS4)
 
 export(hmm,

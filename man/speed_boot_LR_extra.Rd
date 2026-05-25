@@ -40,9 +40,9 @@
             mod <- setpars(mod,getpars(fspmix3))
             fit(mod,emcontrol=em.control(random.start=FALSE),verbose=FALSE)
           },TRUE)
-          if(!inherits(fboot2,"try-error") & !inherits(fboot3,"try-error")) ok <- TRUE
+          if(!inherits(fboot2,"try-error") && !inherits(fboot3,"try-error")) ok <- TRUE
         }
-        if(ok & logLik(fboot3) < logLik(fboot2)) ok <- FALSE
+        if(ok && logLik(fboot3) < logLik(fboot2)) ok <- FALSE
         while(!ok) {
           cat("trying different starting-values")
           fboot3 <- try({
@@ -50,7 +50,7 @@
             mod <- setpars(mod,getpars(fspmix3))
             fit(mod,verbose=FALSE)
           },TRUE)
-          if(!inherits(fboot3,"try-error") & logLik(fboot3) > logLik(fboot2)) ok <- TRUE
+          if(!inherits(fboot3,"try-error") && logLik(fboot3) > logLik(fboot2)) ok <- TRUE
         }
         llratio(fboot3,fboot2)@value
       }

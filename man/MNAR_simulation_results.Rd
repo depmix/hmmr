@@ -77,7 +77,7 @@ for(sim in 1:nsim) {
   mod <- setpars(mod,truepars1)
   ok <- FALSE
   ntry <- 1
-  while(!ok & ntry <= 50) {
+  while(!ok && ntry <= 50) {
     fmod <- try(fit(mod,emcontrol=em.control(maxit = 5000, random.start=FALSE),verbose=FALSE))
     if(!inherits(fmod,"try-error")) {
       if(fmod@message == "Log likelihood converged to within tol. (relative change)") ok <- TRUE
@@ -91,7 +91,7 @@ for(sim in 1:nsim) {
   mod <- setpars(mod,truepars2)
   ok <- FALSE
   ntry <- 1
-  while(!ok & ntry <= 50) {
+  while(!ok && ntry <= 50) {
     fmod <- try(fit(mod,emcontrol=em.control(maxit = 5000, random.start = FALSE),verbose=FALSE))
     if(!inherits(fmod,"try-error")) {
       if(fmod@message == "Log likelihood converged to within tol. (relative change)") ok <- TRUE
